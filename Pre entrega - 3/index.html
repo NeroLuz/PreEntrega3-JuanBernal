@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id="contenedor">
+        <header id="header">
+            <h1 id="titulo">¡¡Bienvenido al nuevo simulador de registro de notas del alumnado!!</h1>
+        </header>
+        <main id="main">
+            <div id="contenedor-inputs">
+                <div id="input-1" class="informacion">
+                    <label for="input-nombre">Ingrese el nombre del alumno:</label>
+                    <input type="text" placeholder="Nombre del alumno" required id="input-nombre" title="Ingrese el nombre del alumno">
+                    <br>
+                    <br>
+                    <div id="input-1_error" class="input-error"></div>
+                </div>
+                <div id="input-2" class="informacion">
+                    <label for="input-edad">Ingrese la edad del alumno:</label>
+                    <input type="text" placeholder="Edad del alumno" required id="input-edad" title="Ingrese la edad del alumno" maxlength="2">
+                    <br>
+                    <br>
+                    <div id="input-2_error" class="input-error"></div>
+                </div>
+                <div id="input-3" class="informacion">
+                    <label for="input-nota">Ingrese la última nota del alumno:</label>
+                    <input type="text" placeholder="Última nota del alumno" required id="input-nota" title="Ingrese la última nota del alumno" maxlength="3">
+                    <br>
+                    <br>
+                    <div id="input-3_error" class="input-error"></div>
+                </div>
+            </div>
+            <input type="submit" value="Enviar" id="boton">
+        </main>
+        <div id="resultados">
+            <div id="mostrar-nombres" class="mostrar-info">
+                <h4>Nombre de los alumnos:</h4>
+            </div>
+            <div id="mostrar-edades" class="mostrar-info">
+                <h4>Edad de los alumnos:</h4>
+            </div>
+            <div id="mostrar-notas" class="mostrar-info">
+                <h4>Notas de los alumnos:</h4>
+            </div>
+        </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>
